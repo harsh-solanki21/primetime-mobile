@@ -2,7 +2,6 @@ import { fetchMovieDetails } from "@/api/tmdb";
 import Icon from "@/assets/icons/adaptive-icon.png";
 import Back from "@/assets/icons/back.png";
 import Star from "@/assets/icons/star.png";
-import { API_CONFIG } from "@/configs/tmdb";
 import useFetch from "@/hooks/useFetch";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import React from "react";
@@ -64,7 +63,7 @@ const MovieDetails = () => {
           <Image
             source={{
               uri: movie?.poster_path
-                ? `${API_CONFIG.TMDB.IMAGE_BASE_URL}${movie.poster_path}`
+                ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
                 : "https://placehold.co/600x400/1a1a1a/FFFFFF.png",
             }}
             className="w-full h-[550px]"

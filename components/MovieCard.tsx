@@ -1,5 +1,4 @@
 import Star from "@/assets/icons/star.png";
-import { API_CONFIG } from "@/configs/tmdb";
 import { IMovie } from "@/types/movie";
 import { Link } from "expo-router";
 import { Image, Text, TouchableOpacity, View } from "react-native";
@@ -18,7 +17,7 @@ const MovieCard = ({
         <Image
           source={{
             uri: poster_path
-              ? `${API_CONFIG.TMDB.IMAGE_BASE_URL}${poster_path}`
+              ? `https://image.tmdb.org/t/p/w500${poster_path}`
               : "https://placehold.co/600x400/1a1a1a/FFFFFF.png",
           }}
           className="w-full h-52 rounded-lg"
