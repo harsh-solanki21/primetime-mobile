@@ -2,12 +2,12 @@ import { ITrendingMovie } from "@/types/appwrite";
 import { IMovie } from "@/types/movie";
 import { Client, Databases, ID, Query } from "react-native-appwrite";
 
-const dbId = process.env.APPWRITE_DB_ID!;
-const collectionId = process.env.APPWRITE_COLLECTION_ID!;
+const dbId = process.env.EXPO_PUBLIC_APPWRITE_DB_ID!;
+const collectionId = process.env.EXPO_PUBLIC_APPWRITE_COLLECTION_ID!;
 
 const client = new Client()
   .setEndpoint("https://cloud.appwrite.io/v1")
-  .setProject(process.env.APPWRITE_PROJECT_ID!);
+  .setProject(process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!);
 
 const database = new Databases(client);
 

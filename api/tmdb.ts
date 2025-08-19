@@ -2,7 +2,7 @@ import { IMovie, IMovieDetails } from "@/types/movie";
 
 const TMDB_BASE_URL: string = "https://api.themoviedb.org/3";
 const AUTH_HEADERS: Record<string, string> = {
-  Authorization: `Bearer ${process.env.TMDB_ACCESS_TOKEN!}`,
+  Authorization: `Bearer ${process.env.EXPO_PUBLIC_TMDB_ACCESS_TOKEN!}`,
   "Content-Type": "application/json",
 };
 
