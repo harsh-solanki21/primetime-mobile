@@ -4,19 +4,19 @@ PrimeTime Mobile is a cross-platform movie discovery app built with [Expo](https
 
 ## 🎥 Video Demo
 
-[![PrimeTime Mobile Video Demo](https://img.youtube.com/vi/_5rsu3xib8s/hqdefault.jpg)](https://youtu.be/_5rsu3xib8s)
+[![PrimeTime Mobile Video Demo](https://img.youtube.com/vi/-fX10IDsXww/hqdefault.jpg)](https://youtube.com/shorts/-fX10IDsXww)
 
 > 📺 **Click the image above to watch a quick demo of PrimeTime Mobile in action!**
 
 <br />
 
-## 📲 [Click here install PrimeTime 🎬 on your device](https://expo.dev/accounts/harsh-native/projects/primetime/builds/4ab85f3a-8ea0-4254-a3c4-da6de7c32154)
+## 📲 [Click here install PrimeTime 🎬 on your device](https://expo.dev/accounts/harsh-native/projects/primetime/builds/aaf557a6-90ac-466a-a784-1b11c592df2b)
 
 <br />
 
 ## 🌐 Web Version
 
-The web version of PrimeTime is also available. Check it out! [GitHub repository](https://github.com/harsh-solanki21/primetime).
+The Web version of PrimeTime is also available. Check it out! [GitHub repository](https://github.com/harsh-solanki21/primetime).
 
 <br />
 
@@ -69,11 +69,10 @@ The web version of PrimeTime is also available. Check it out! [GitHub repository
 Configure your API keys and endpoints in the `.env` file:
 
 ```
-TMDB_ACCESS_TOKEN=...
-APPWRITE_PROJECT_ID=...
-APPWRITE_DB_ID=...
-APPWRITE_COLLECTION_ID=...
-APPWRITE_ENDPOINT=...
+EXPO_PUBLIC_TMDB_ACCESS_TOKEN=...
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=...
+EXPO_PUBLIC_APPWRITE_DB_ID=...
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=...
 ```
 
 <br />
@@ -83,7 +82,6 @@ APPWRITE_ENDPOINT=...
 - `app/` — Main app screens and routing
 - `components/` — Reusable UI components
 - `api/` — API integrations (TMDB, Appwrite)
-- `configs/` — Configuration files
 - `hooks/` — Custom React hooks
 - `types/` — TypeScript type definitions
 - `assets/` — Images, icons, fonts
